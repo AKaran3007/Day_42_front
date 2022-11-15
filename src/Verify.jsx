@@ -23,7 +23,7 @@ function Verify() {
       onSubmit: async (values)=>{
   try {
     console.log(values)
-  let loginData =await axios.post("http://localhost:4000/verify-email",values)
+  let loginData =await axios.post("https://day42forgot.herokuapp.com/verify-email",values)
   
   setInitial(loginData.data.messege)
   } catch (error) {

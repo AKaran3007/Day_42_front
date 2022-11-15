@@ -24,7 +24,7 @@ function Register() {
       onSubmit: async (values)=>{
   try {
     console.log(values)
-  let loginData =await axios.post("http://localhost:4000/user",values)
+  let loginData =await axios.post("https://day42forgot.herokuapp.com/user",values)
   setInitial(loginData.data.messege)
   } catch (error) {
     console.log(error)
